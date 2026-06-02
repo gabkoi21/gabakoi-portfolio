@@ -236,7 +236,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className="reveal px-6 py-24 max-w-6xl mx-auto">
       <div className="flex items-center gap-2 font-mono text-[11px] text-[#00d4b8] tracking-[0.15em] uppercase mb-4">
-        <span className="text-purple-400 opacity-60">//</span>
+        <span className="text-purple-400 opacity-60">{"//"}</span>
         Activity &amp; Contact
       </div>
       <h2 className="text-[clamp(1.7rem,3.5vw,2.6rem)] font-semibold tracking-tight mb-10">

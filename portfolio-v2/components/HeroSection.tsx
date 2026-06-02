@@ -10,7 +10,7 @@ export default function HeroSection() {
     >
       {/* Section label */}
       <div className="flex items-center gap-2 font-mono text-[11px] text-[#00d4b8] tracking-[0.15em] uppercase mb-5">
-        <span className="text-purple-400 opacity-60">//</span>
+        <span className="text-purple-400 opacity-60">{"//"}</span>
         Security Analyst &amp; Developer
       </div>
 
