@@ -12,6 +12,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
   { label: "Cyber Projects", href: "#cybersecurity-projects" },
+  { label: "Training", href: "#training" },
   { label: "Dev Projects", href: "#development-projects" },
   { label: "Credentials", href: "#credentials" },
   { label: "Contact", href: "#contact" },
@@ -54,12 +55,12 @@ export const SKILL_GROUPS: SkillGroup[] = [
   {
     label: "SOC & Security Operations",
     variant: "teal",
-    skills: ["Alert Triage", "Security Monitoring", "IOC Analysis", "Phishing Analysis", "Incident Response", "Threat Detection", "Security Investigation", "Incident Documentation"],
+    skills: ["Alert Triage", "Security Monitoring", "IOC Analysis", "Phishing Analysis", "Incident Response", "Security Investigation", "Incident Documentation", "SOC Operations", "Alert Classification", "Escalation Decision-Making"],
   },
   {
     label: "SOC Investigation Tools",
     variant: "teal",
-    skills: ["Splunk", "VirusTotal", "TryHackMe"],
+    skills: ["Splunk", "VirusTotal", "TryDetectThis", "TryHackMe"],
   },
   {
     label: "Systems, Programming & Data",

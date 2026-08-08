@@ -7,10 +7,11 @@ function CyberProjectCard({ project }: { project: CyberProject }) {
     <article className="project-card">
       <div className="flex items-center justify-between gap-3 mb-5">
         <span className="eyebrow">{project.category}</span>
-        <span className={`status-badge ${project.status === 'In Progress' ? 'status-progress' : ''}`}>{project.status}</span>
+        <span className={`status-badge ${project.status === 'In Progress' ? 'status-progress' : project.status === 'Completed' ? 'status-completed' : ''}`}>{project.status}</span>
       </div>
       <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
       <p className="text-sm text-[#a6b2ca] leading-6 mb-5">{project.description}</p>
+      {project.platform && <div className="mb-4"><p className="card-label">Platform</p><p className="text-sm text-[#f0f4ff]">{project.platform}</p></div>}
       <div className="mb-4"><p className="card-label">Tools</p><div className="tag-list">{project.tools.map(tool => <span key={tool}>{tool}</span>)}</div></div>
       <div className="mb-6"><p className="card-label">Skills demonstrated</p><div className="tag-list subtle">{project.skills.map(skill => <span key={skill}>{skill}</span>)}</div></div>
       <div className="flex flex-wrap gap-5 pt-5 border-t border-[#1e2d4d]">

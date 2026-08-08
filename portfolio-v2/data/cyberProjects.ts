@@ -6,15 +6,18 @@ export const CYBER_PROJECTS: CyberProject[] = [
     slug: 'phishing-email-investigation',
     title: 'Phishing Email Investigation',
     category: 'SOC Investigation',
-    description: 'A structured phishing-alert investigation covering email indicators, reputation checks, alert classification, and incident documentation. Investigation evidence and results will be published after the lab is complete.',
-    tools: ['Splunk', 'VirusTotal', 'TryHackMe SOC Simulator'],
-    skills: ['Alert Triage', 'Phishing Analysis', 'IOC Analysis', 'Email Security', 'Incident Documentation'],
-    status: 'In Progress',
-    scenario: 'A sanitized phishing investigation case study is being prepared. No investigation outcome is claimed until the analysis is complete.',
-    classification: 'Needs Further Investigation',
+    status: 'Completed',
+    platform: 'TryHackMe SOC Simulator',
+    scenarioTitle: 'Introduction to Phishing',
+    role: 'SOC Level 1 Analyst',
+    siem: 'Splunk',
+    description: 'Completed the TryHackMe SOC Simulator Introduction to Phishing scenario through a structured SOC L1 investigation workflow involving alert triage, SIEM investigation, indicator analysis, classification, documentation, and escalation decision-making.',
+    tools: ['Splunk', 'VirusTotal', 'TryDetectThis', 'TryHackMe'],
+    skills: ['Alert Triage', 'Phishing Analysis', 'IOC Analysis', 'SIEM Investigation', 'Email Security', 'Alert Classification', 'Incident Documentation', 'SOC Escalation'],
+    scenarioOverview: 'This case study is based on the completed TryHackMe SOC Simulator Introduction to Phishing scenario. It documents a hands-on SOC training investigation without publishing protected scenario answers, flags, or proprietary instructions.',
   },
 ];
 
 export function getCyberProject(slug: string) {
-  return CYBER_PROJECTS.find((project) => project.slug === slug);
+  return CYBER_PROJECTS.find(project => project.slug === slug);
 }

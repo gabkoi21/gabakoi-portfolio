@@ -30,28 +30,41 @@ export interface CyberProject {
   tools: string[];
   skills: string[];
   status: CyberProjectStatus;
+  platform?: string;
+  scenarioTitle?: string;
+  role?: string;
+  siem?: string;
   github?: string;
-  image?: string;
-  scenario?: string;
+  scenarioOverview?: string;
+  investigationObjective?: string;
   alertDetails?: {
     alertType?: string;
     severity?: string;
-    source?: string;
     timestamp?: string;
     sender?: string;
     recipient?: string;
-    ip?: string;
+    subject?: string;
+    sourceIp?: string;
     domain?: string;
+    url?: string;
+    fileName?: string;
     fileHash?: string;
   };
-  indicators?: string[];
+  indicators?: Array<{ type: string; value: string; notes?: string }>;
   investigationSteps?: string[];
   findings?: string[];
   classification?: 'True Positive' | 'False Positive' | 'Benign Positive' | 'Needs Further Investigation';
-  escalation?: string;
+  classificationReason?: string;
+  escalationDecision?: 'Escalation Required' | 'No Escalation Required';
+  escalationReason?: string;
   remediation?: string[];
   lessonsLearned?: string[];
+  evidence?: Array<{ image: string; alt: string; caption?: string }>;
 }
+
+export interface CaseStudyStep { number: string; title: string; description: string; }
+export interface CaseStudyTool { name: string; purpose: string; description: string; }
+export interface CaseStudyGroup { title: string; items: string[]; }
 
 export interface TryHackMeAchievement {
   id: number;
@@ -69,6 +82,25 @@ export interface TryHackMeLab {
   skills: string[];
   description?: string;
   writeupUrl?: string;
+}
+
+export type TryHackMeRoomCategory =
+  | 'SOC Operations'
+  | 'Alert Triage & Investigation'
+  | 'SOC Performance'
+  | 'Threat & Attack Awareness'
+  | 'Security Foundations';
+
+export interface TryHackMeRoom {
+  id: number;
+  title: string;
+  slug: string;
+  url: string;
+  description: string;
+  category: TryHackMeRoomCategory;
+  difficulty: 'Easy' | 'Info';
+  access?: 'Free Walkthrough' | 'Premium Walkthrough';
+  status: 'Completed';
 }
 
 export interface Project {
