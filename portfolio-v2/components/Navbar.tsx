@@ -38,7 +38,7 @@ export default function Navbar() {
         </span>
 
         {/* Desktop links */}
-        <ul className="hidden md:flex items-center gap-8">
+        <ul className="hidden lg:flex items-center gap-5">
           {NAV_ITEMS.map((item) => (
             <li key={item.href}>
               <a
@@ -53,7 +53,7 @@ export default function Navbar() {
         </ul>
 
         {/* Status indicator */}
-        <div className="hidden md:flex items-center gap-2">
+        <div className="hidden xl:flex items-center gap-2">
           <span className="status-dot w-2 h-2 rounded-full bg-green-500 inline-block" />
           <span className="font-mono text-[10px] text-[#8896b3] tracking-wide">
             Available for opportunities
@@ -63,8 +63,9 @@ export default function Navbar() {
         {/* Mobile hamburger */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-[#8896b3] hover:text-[#00d4b8] transition-colors"
-          aria-label="Toggle menu"
+          className="lg:hidden text-[#8896b3] hover:text-[#00d4b8] transition-colors p-2"
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen}
         >
           <svg
             width="22"
@@ -85,14 +86,14 @@ export default function Navbar() {
       {/* Mobile menu backdrop */}
       {menuOpen && (
         <div
-          className="md:hidden fixed inset-0 bg-black/50 z-40 top-16"
+          className="lg:hidden fixed inset-0 bg-black/50 z-40 top-16"
           onClick={() => setMenuOpen(false)}
         />
       )}
 
       {/* Mobile menu - slides from right */}
       <div
-        className={`md:hidden fixed top-16 right-0 h-[calc(100vh-4rem)] w-1/2 bg-[#0d1428] border-l border-[#1e2d4d] px-6 py-10 transform transition-transform duration-300 ease-in-out z-40 flex flex-col ${
+        className={`lg:hidden fixed top-16 right-0 h-[calc(100vh-4rem)] w-[min(82vw,22rem)] bg-[#0d1428] border-l border-[#1e2d4d] px-6 py-10 transform transition-transform duration-300 ease-in-out z-40 flex flex-col ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >

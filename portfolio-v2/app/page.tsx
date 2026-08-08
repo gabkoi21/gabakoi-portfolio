@@ -7,6 +7,10 @@ import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import Divider from '@/components/Divider';
 import ScrollRevealProvider from '@/components/ScrollRevealProvider';
+import AboutSection from '@/components/AboutSection';
+import CybersecurityProjects from '@/components/CybersecurityProjects';
+import ResumeSection from '@/components/ResumeSection';
+import CybersecurityTraining from '@/components/CybersecurityTraining';
 
 export default function Home() {
   return (
@@ -20,11 +24,19 @@ export default function Home() {
         <main>
           <HeroSection />
           <Divider />
-          <CredentialsSection />
+          <AboutSection />
           <Divider />
           <SkillsSection />
           <Divider />
+          <CybersecurityProjects />
+          <Divider />
+          <CybersecurityTraining />
+          <Divider />
           <ProjectsSection />
+          <Divider />
+          <CredentialsSection />
+          <Divider />
+          <ResumeSection />
           <Divider />
           <ContactSection />
         </main>

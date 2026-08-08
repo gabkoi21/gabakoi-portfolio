@@ -17,9 +17,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Gabriel Akoi | Cybersecurity Analyst & Full-Stack Developer',
+  title: 'Gabriel Akoi | Aspiring SOC Analyst',
   description:
-    'Bridging the gap between software engineering and information security. Specializing in secure application development, network defense, and Python-based security automation.',
+    'Aspiring SOC Analyst developing hands-on skills in security monitoring, alert investigation, phishing analysis, SIEM, and incident response.',
   keywords: [
     'cybersecurity',
     'full-stack developer',
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Gabriel Akoi' }],
   openGraph: {
-    title: 'Gabriel Akoi | Cybersecurity Analyst & Full-Stack Developer',
+    title: 'Gabriel Akoi | Aspiring SOC Analyst',
     description:
-      'Bridging the gap between software engineering and information security.',
+      'Cybersecurity and SOC analyst candidate with a strong full-stack development background.',
     type: 'website',
   },
 };

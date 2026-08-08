@@ -118,7 +118,7 @@ function UniversityCard() {
         {[
           { val: "4", lbl: "Years" },
           { val: "CyberSec", lbl: "Focus" },
-          { val: "2026", lbl: "Grad Year" },
+          { val: "2026", lbl: "Expected" },
         ].map(({ val, lbl }) => (
           <div key={lbl} className="text-center">
             <div className="font-mono text-2xl font-bold text-purple-400 leading-none">
@@ -170,9 +170,9 @@ function CredlyBadgeCard() {
       </div>
 
       <p className="text-[0.8rem] text-[#8896b3] leading-relaxed mb-4">
-        A rigorous 8-course specialization covering the full spectrum of modern
-        cybersecurity practice — from SIEM tools and Python automation to
-        incident response and career readiness.
+        A comprehensive professional certificate program covering modern
+        cybersecurity foundations, security operations, SIEM, Linux, SQL,
+        Python, threat analysis, detection, and incident response.
       </p>
 
       {/* Toggle */}

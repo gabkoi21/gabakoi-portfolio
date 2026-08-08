@@ -10,13 +10,13 @@ const variantClasses: Record<SkillGroup["variant"], string> = {
 
 export default function SkillsSection() {
   return (
-    <section id="skills" className="reveal px-6 py-10 max-w-6xl mx-auto">
+    <section id="skills" className="reveal px-6 py-20 max-w-6xl mx-auto scroll-mt-20">
       <div className="flex items-center gap-2 font-mono text-[11px] text-[#00d4b8] tracking-[0.15em] uppercase mb-4">
         <span className="text-purple-400 opacity-60">{"//"}</span>
-        Technical Skills &amp; Tools Matrix
+        Cybersecurity Capabilities
       </div>
       <h2 className="text-[clamp(1.7rem,3.5vw,2.6rem)] font-semibold tracking-tight mb-10">
-        Capabilities &amp; <span className="text-[#00d4b8]">Tooling</span>
+        SOC Skills &amp; <span className="text-[#00d4b8]">Technical Foundations.</span>
       </h2>
 
       <div className="space-y-8">

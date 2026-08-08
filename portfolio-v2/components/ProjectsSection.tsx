@@ -76,14 +76,15 @@ function ProjectCard({ project }: { project: Project }) {
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="reveal px-6 py-10 max-w-6xl mx-auto">
+    <section id="development-projects" className="reveal px-6 py-20 max-w-6xl mx-auto scroll-mt-20">
       <div className="flex items-center gap-2 font-mono text-[11px] text-[#00d4b8] tracking-[0.15em] uppercase mb-4">
         <span className="text-purple-400 opacity-60">{"//"}</span>
-        Featured Projects
+        Additional Technical Strength
       </div>
       <h2 className="text-[clamp(1.7rem,3.5vw,2.6rem)] font-semibold tracking-tight mb-10">
-        Built &amp; <span className="text-[#00d4b8]">Deployed.</span>
+        Software Development <span className="text-[#00d4b8]">Projects.</span>
       </h2>
+      <p className="section-intro mb-10">Production-minded applications demonstrating my understanding of software architecture, data, and the systems security teams help protect.</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {PROJECTS.map((project) => (

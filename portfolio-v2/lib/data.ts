@@ -9,23 +9,24 @@ import type {
 
 export const NAV_ITEMS: NavItem[] = [
   { label: "Home", href: "#hero" },
-  { label: "Credentials", href: "#credentials" },
+  { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
-  { label: "Projects", href: "#projects" },
+  { label: "Cyber Projects", href: "#cybersecurity-projects" },
+  { label: "Dev Projects", href: "#development-projects" },
+  { label: "Credentials", href: "#credentials" },
   { label: "Contact", href: "#contact" },
 ];
 
 export const HERO_STATS: Stat[] = [
-  { value: "10+", label: "Certifications" },
-  // { value: '2', label: 'Live Projects' },
-  { value: "3+", label: "Years Dev Exp" },
+  { value: "SOC", label: "Career Focus" },
+  { value: "3+", label: "Years in Dev" },
   { value: "BSc", label: "Cybersecurity" },
 ];
 
 export const HERO_TAGS: string[] = [
-  "SIEM/SOAR",
-  "Network Defense",
-  "Python Automation",
+  "SOC Operations",
+  "Alert Triage",
+  "Phishing Analysis",
   "Incident Response",
   "Full-Stack Dev",
 ];
@@ -51,44 +52,29 @@ export const GOOGLE_COURSES: Course[] = [
 
 export const SKILL_GROUPS: SkillGroup[] = [
   {
-    label: "Security Tools & Platforms",
+    label: "SOC & Security Operations",
     variant: "teal",
-    skills: [
-      "Wireshark",
-      "Tcpdump",
-      "Suricata",
-      // "AI"
-      // "Nmap",
-      "Splunk",
-      "Chronicle",
-      "Linux CLI",
-      "SQL",
-    ],
+    skills: ["Alert Triage", "Security Monitoring", "IOC Analysis", "Phishing Analysis", "Incident Response", "Threat Detection", "Security Investigation", "Incident Documentation"],
   },
   {
-    label: "Languages, Frameworks & Infrastructure",
-    variant: "purple",
-    skills: [
-      "TypeScript",
-      "React",
-      "FastAPI",
-      "Next.js",
-      "Python",
-      "PostgreSQL",
-      "Git/GitHub",
-    ],
+    label: "SOC Investigation Tools",
+    variant: "teal",
+    skills: ["Splunk", "VirusTotal", "TryHackMe"],
   },
   {
-    label: "Security Concepts & Frameworks",
+    label: "Systems, Programming & Data",
     variant: "blue",
-    skills: [
-      "SIEM / SOAR Triage",
-      // "IAM",
-      "Network Security",
-      "Risk Management",
-      "NIST Framework",
-      "Incident Response",
-    ],
+    skills: ["Linux", "Python", "SQL", "JavaScript", "TypeScript"],
+  },
+  {
+    label: "Security Frameworks & Concepts",
+    variant: "teal",
+    skills: ["NIST Cybersecurity Framework", "SIEM", "SOAR", "Authentication", "Access Control", "Incident Response"],
+  },
+  {
+    label: "Full-Stack Development — Additional Strength",
+    variant: "purple",
+    skills: ["React", "Next.js", "FastAPI", "PostgreSQL", "Git / GitHub"],
   },
 ];
 
