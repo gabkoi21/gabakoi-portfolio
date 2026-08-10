@@ -22,7 +22,7 @@ export default function HeroSection() {
       <div className="flex flex-wrap gap-2 mb-9">{HERO_TAGS.map(tag => <span key={tag} className="tag">{tag}</span>)}</div>
       <div className="flex flex-wrap gap-3 mb-14">
         <a href="#cybersecurity-projects" onClick={scrollToProjects} className="button-primary">View Cybersecurity Projects →</a>
-        <a href="https://github.com/gabkoi21" target="_blank" rel="noopener noreferrer" className="button-secondary">GitHub ↗</a>
+        <a href="https://github.com/gabkoi21/cybersecurity-lab-portfolio" target="_blank" rel="noopener noreferrer" className="button-secondary">GitHub ↗</a>
       </div>
       <div className="flex flex-wrap gap-8 md:gap-12 pt-6 border-t border-[#1e2d4d]">{HERO_STATS.map(stat => <div key={stat.label}><div className="font-mono text-2xl md:text-3xl font-bold text-[#00d4b8]">{stat.value}</div><div className="font-mono text-[10px] text-[#8896b3] uppercase tracking-[0.12em] mt-1">{stat.label}</div></div>)}</div>
     </section>
