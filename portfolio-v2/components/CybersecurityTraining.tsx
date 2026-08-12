@@ -19,7 +19,10 @@ export default function CybersecurityTraining() {
 
         <div className="completed-scenario"><span aria-hidden="true">✓</span><div><small>Completed SOC Simulator Scenario</small><strong>Introduction to Phishing</strong></div></div>
 
-        <a href="https://tryhackme.com/p/gabakoi21" target="_blank" rel="noopener noreferrer" className="button-secondary self-start">View TryHackMe Profile ↗</a>
+        <div className="flex flex-wrap gap-3">
+          <a href="https://tryhackme.com/p/gabakoi21" target="_blank" rel="noopener noreferrer" className="button-secondary">View TryHackMe Profile ↗</a>
+          <a href="https://l1nk.dev/89xchek" target="_blank" rel="noopener noreferrer" className="button-secondary">View Blue Base Cheat Sheet ↗</a>
+        </div>
       </div>
     </section>
   );

@@ -28,7 +28,7 @@ export default function CybersecurityProjects() {
       <div className="section-kicker"><span>{'//'}</span> Primary Career Focus</div>
       <h2 className="section-title mb-4">Cybersecurity Projects &amp; <span>SOC Investigations.</span></h2>
       <p className="section-intro">Practical, documented security work focused on how alerts are investigated, evidence is handled, and decisions are communicated. Projects are clearly labeled while work is underway.</p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10 max-w-3xl">{CYBER_PROJECTS.map(project => <CyberProjectCard key={project.id} project={project} />)}</div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">{CYBER_PROJECTS.map(project => <CyberProjectCard key={project.id} project={project} />)}</div>
     </section>
   );
 }

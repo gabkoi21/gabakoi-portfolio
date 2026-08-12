@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { CYBER_PROJECTS, getCyberProject } from '@/data/cyberProjects';
 import { CASE_SKILLS, CASE_TOOLS, REPORT_STRUCTURE, RESPONSIBILITIES, TAKEAWAYS, WORKFLOW } from '@/data/phishingCaseStudy';
 import EdrCaseStudy from '@/components/EdrCaseStudy';
+import SplunkBasicsCaseStudy from '@/components/SplunkBasicsCaseStudy';
 
 export function generateStaticParams() { return CYBER_PROJECTS.map(project => ({ slug: project.slug })); }
 
@@ -12,6 +13,7 @@ export default function CyberProjectDetail({ params }: { params: { slug: string 
   const project = getCyberProject(params.slug);
   if (!project) notFound();
   if (project.slug === 'endpoint-detection-response-investigation') return <EdrCaseStudy project={project} />;
+  if (project.slug === 'splunk-the-basics') return <SplunkBasicsCaseStudy project={project} />;
 
   return (
     <main className="case-page relative px-6 py-14 md:py-20 max-w-6xl mx-auto">

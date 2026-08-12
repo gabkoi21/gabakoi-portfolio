@@ -2,6 +2,21 @@ import type { CyberProject } from '@/types';
 
 export const CYBER_PROJECTS: CyberProject[] = [
   {
+    id: 3,
+    slug: 'splunk-the-basics',
+    title: 'Splunk: The Basics',
+    category: 'SIEM & Log Analysis',
+    status: 'Completed',
+    platform: 'TryHackMe Splunk Simulation',
+    scenarioTitle: 'Splunk: The Basics',
+    role: 'SOC Analyst Trainee',
+    siem: 'Splunk Enterprise',
+    description: 'Configured a Splunk index, ingested newline-delimited JSON VPN logs, validated event parsing, and used Search Processing Language queries to investigate users, source IP addresses, and geographic activity.',
+    tools: ['Splunk Enterprise', 'SPL', 'JSON', 'TryHackMe'],
+    skills: ['Log Ingestion', 'Index Management', 'Field Extraction', 'SPL Searching', 'Event Filtering', 'Statistical Analysis', 'VPN Log Analysis'],
+    scenarioOverview: 'A hands-on TryHackMe room covering Splunk architecture, the data-ingestion workflow, core metadata fields, and practical investigation of VPN events with SPL.',
+  },
+  {
     id: 2,
     slug: 'endpoint-detection-response-investigation',
     title: 'Endpoint Detection & Response Investigation',
