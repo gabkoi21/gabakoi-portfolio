@@ -2,6 +2,22 @@ import type { CyberProject } from '@/types';
 
 export const CYBER_PROJECTS: CyberProject[] = [
   {
+    id: 4,
+    slug: 'ssh-log-analysis-using-splunk',
+    title: 'SSH Log Analysis using Splunk',
+    category: 'SIEM & Log Analysis',
+    status: 'Completed',
+    platform: 'Local Splunk Enterprise Lab',
+    scenarioTitle: 'SSH Authentication Analysis',
+    role: 'SOC Analyst Learner',
+    siem: 'Splunk Enterprise',
+    github: 'https://github.com/gabkoi21/cybersecurity-lab-portfolio/tree/main/ssh-log-analysis-using-splunk',
+    description: 'Ingested JSON SSH logs into Splunk, validated parsed fields, analyzed failed logins, reviewed brute-force indicators, tracked successful logins, and identified unauthenticated SSH connections.',
+    tools: ['Splunk Enterprise', 'SPL', 'JSON SSH Logs', 'GitHub Documentation'],
+    skills: ['Log Ingestion', 'Field Validation', 'SPL Searching', 'Failed Login Analysis', 'Brute-Force Detection', 'SSH Monitoring', 'Alert Logic', 'SOC Documentation'],
+    scenarioOverview: 'A local SOC lab focused on analyzing SSH authentication activity in Splunk to detect failed login patterns, repeated authentication failures, successful access, and connections without authentication.',
+  },
+  {
     id: 3,
     slug: 'splunk-the-basics',
     title: 'Splunk: The Basics',

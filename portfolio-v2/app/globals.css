@@ -93,9 +93,9 @@ a:focus-visible, button:focus-visible {
 .case-summary div:last-child { border-right: 0; }
 .case-summary dt { color: var(--muted); font: 9px var(--font-mono); letter-spacing: .1em; text-transform: uppercase; }
 .case-summary dd { color: var(--white); font-size: .85rem; margin-top: .4rem; overflow-wrap: anywhere; }
-.case-toc { position: sticky; top: 4rem; z-index: 20; display: flex; gap: 1.1rem; padding: .8rem 0; overflow-x: auto; background: rgba(10,15,30,.94); border-bottom: 1px solid var(--slate-border); scrollbar-width: none; }
-.case-toc a { color: var(--muted); font: 9px var(--font-mono); text-transform: uppercase; white-space: nowrap; }
-.case-toc a:hover { color: var(--teal); }
+.case-toc { position: sticky; top: 4rem; z-index: 20; display: flex; flex-wrap: wrap; gap: .65rem; padding: .9rem 0; overflow-x: auto; background: rgba(10,15,30,.96); border-top: 1px solid var(--slate-border); border-bottom: 1px solid var(--slate-border); scrollbar-width: none; }
+.case-toc a { border: 1px solid rgba(148,163,184,.18); border-radius: 999px; color: #d8e2f4; font: 11px var(--font-mono); line-height: 1; padding: .55rem .75rem; text-transform: uppercase; white-space: nowrap; transition: border-color .2s ease, color .2s ease, background .2s ease; }
+.case-toc a:hover, .case-toc a:focus-visible { background: rgba(20,184,166,.08); border-color: rgba(20,184,166,.45); color: var(--teal); outline: none; }
 .case-block, .training-context { padding: clamp(2.5rem, 7vw, 5rem) 0; border-bottom: 1px solid var(--slate-border); line-height: 1.8; scroll-margin-top: 7rem; }
 .case-block > p + p, .training-context > p + p { margin-top: 1rem; }
 .case-block strong, .training-context strong { color: var(--white); }
